@@ -17,7 +17,7 @@ model = LinearRegression()
 model.fit(X_train, y_train)
 
 # Make predictions using ALL of X
-y_pred = model.predict(X)
+y_pred = model.predict(X_test)
 
 # Evaluate the model on the TEST data
 mse = mean_squared_error(y_test, model.predict(X_test))
